@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Mine Sweeper</title>
+  </head>
+  <body onload="onInit()">
+    <div class="header">
+      <h1>Mine Sweeper</h1>
+    </div>
+    <div class="game">
+      <div class="game-info">
+        <div class="level">
+          <button class="btn level-btn" onclick="setLevel(this)">Easy</button>
+          <button class="btn level-btn" onclick="setLevel(this)">Medium</button>
+          <button class="btn level-btn" onclick="setLevel(this)">Hard</button>
+        </div>
+        <div class="lives">
+          <p class="lives-remain">lives: <span class="hearts">❤️❤️❤️</span></p>
+        </div>
+        <div class="game-info-small">
+          <div class="timer"></div>
+          <button class="btn reset-btn" onclick="resetGame(this)">😃</button>
+          <div class="mines-left"><p>000</p></div>
+        </div>
+      <div class="board">
+        <table>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <footer>Ron Simon</footer>
+    <script src="js/utils.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/mine.js"></script>
+  </body>
+</html>
